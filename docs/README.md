@@ -25,7 +25,7 @@ gradle echo
     java -cp build/classes/java/main ui.TextUI
 
 java -jar build/libs/Mancala.jar    
-Expected output
+Expected output (click on this file so it will display correctly)
 +-------+-------+-------+-------+-------+-------+-------+-------+
 |       |   4   |   4   |   4   |   4   |   4   |   4   |       |
 +   0   +-------+-------+-------+-------+-------+-------+   0   +
