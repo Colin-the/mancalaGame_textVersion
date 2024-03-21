@@ -41,7 +41,7 @@ inputs you enter to move different pieces)
 
 ## Limitations
 
-There are no known errors at this time, all methods are belived to be fully functioning
+There are no known errors at this time, all methods are believed to be fully functioning
 The capturing feature was not fully tested and thus may not be fully functional at this time but should work in some capacity
 
 ## Author Information
