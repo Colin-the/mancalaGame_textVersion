@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ui.TextUI'
+    }
+    archiveBaseName = 'Mancala'
+}
+
+
+task echo;
+
+echo.doFirst {
+    println "To run the program from jar:\njava -jar build/libs/Mancala.jar"
+    println "To run the program from class files:\njava -cp build/classes/java/main ui.TextUI"
+}
+
+/* the ignoreFailures line tells gradle to continue to build
+your code even if tests fail.  This is useful when you are first 
+working on something, but it is more useful to change true to false as you
+have all of the methods implemented*/
+test {
+    useJUnitPlatform()
+    ignoreFailures = true
+}
+
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
